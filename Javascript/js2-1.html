@@ -1,0 +1,24 @@
+<html>
+    <head>
+    
+    </head>
+    <html>
+        <script>
+
+
+var composedvalue = (f1,f2) => (data) => f1(f2(data))
+
+var square = (num) => {
+    return num*num;
+}
+var double = (num) =>
+{
+    return num*2;
+}
+
+var getNumber = composedvalue(square,double)
+
+console.log(getNumber(5))
+
+</script>
+    </html>
