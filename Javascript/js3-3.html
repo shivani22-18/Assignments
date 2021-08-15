@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Return Array that Passed Function Test</title>
+    </head>
+    <html>
+        <script>
+            class Rectangle
+            {
+                constructor(height,width)
+                {
+                    this.height= height;
+                    this.width=width;
+                }
+                get getheight()
+                {
+                    return this.height;
+
+                }
+                get getwidth()
+                {
+                    return this.width;
+                }
+            }
+
+            var object = new Rectangle(4,5);
+            document.write("Rectangle<br>Height: "+ object.getheight);
+            document.write("<br>Width: "+ object.getwidth);
+
+
+            Rectangle.prototype.getarea = function(){
+                return this.height * this.width;
+            }
+
+            Rectangle.prototype.height = 50;
+            document.write("<br><br>Rectangle Area <br> Area: " + object.getarea())
+            
+            
+        </script>
+    </html>
+</html>

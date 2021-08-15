@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Return Array that Passed Function Test</title>
+    </head>
+    <html>
+        <script>
+            class Rectangle
+            {
+                constructor(height,width)
+                {
+                    this.height= height;
+                    this.width=width;
+                }
+                get getheight()
+                {
+                    return this.height;
+
+                }
+                get getwidth()
+                {
+                    return this.width;
+                }
+            }
+
+            var object = new Rectangle(3,5);
+            document.write("Rectangle<br>Height: "+ object.getheight);
+            document.write("<br>Width: "+ object.getwidth);
+
+            object = new Rectangle(7,9);
+            document.write("<br><br>Updated Rectangle<br>Height: "+ object.getheight);
+            document.write("<br>Width: "+ object.getwidth);
+            
+            
+        </script>
+    </html>
+</html>
