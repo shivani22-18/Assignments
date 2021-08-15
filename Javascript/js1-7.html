@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Different Currencies</title>
+    </head>
+    <body>
+        <label>Enter Number:</label><br>
+        <input type="number" name="" id="money" onkeyup="currency()"><span id = "showrupee"></span>
+        <span id = "showeuro"></span>
+        <span id = "showmoney"></span>
+       <script>
+           function currency(){
+            var dollar = document.getElementById("money").value;
+            document.write(dollar,"$ in other currencies: <br>");
+            var rupee = dollar*74.20;
+            var euro = dollar*0.85;
+            var yen = dollar*109.841;
+            document.getElementById('showrupee').innerHTML="Rupee" + rupee + ":";
+            document.getElementById('showeuro').innerHTML="Euro" + euro + ":";
+        document.getElementById('showmoney').innerHTML="Yen" + yen + ":";
+        }
+       </script>
+    </body>
+</html>

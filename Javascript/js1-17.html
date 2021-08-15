@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>K rotations of an array</title>
+    </head>
+    <body>
+        
+       <script>
+           var array = prompt("Enter a string i.e space seperated");
+            var number = parseInt(prompt("Enter no. rotations"));
+            array = array.split(" ");
+            
+            while(number > 0){
+                array.push(array[0]);
+                array.shift();
+                
+                number--;
+            }
+          
+            document.write("<br>Final array: ",array);
+       </script>
+    </body>
+</html>

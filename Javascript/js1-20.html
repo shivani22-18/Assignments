@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Pizza</title>
+        <!-- <script>
+            function myFunction() {
+  var x = document.getElementById("mySubmit").formTarget;
+  document.getElementById("demo")
+        </script> -->
+    </head>
+<style>
+body{
+    background-color: gainsboro;
+}
+    
+</style>
+
+    <body>
+      <form name = "myform" onsubmit="return validation()">
+          <label for="name">Name: </label>
+          <input type="text" id="name" name="name" "required"><br><br>
+
+          <label for="name">Email: </label>
+          <input type="text" id="email" name="email" "required"><br>
+
+          <p><b>Toppings:</b></p>
+          <label for="name">Extra Cheese:</label>
+          <input type="checkbox" id="cheese" name="cheese">
+          
+          <label for="name">Pepperoni:</label>
+          <input type="checkbox" id="pepperoni" name="pepperoni">
+          
+          <label for="name">Olives:</label>
+          <input type="checkbox" id="olives" name="olives">
+
+          <label for="name">Pepper:</label>
+          <input type="checkbox" id="pepper" name="pepper">
+
+          <label for="name">Bacon:</label>
+          <input type="checkbox" id="bacon" name="bacon">
+
+          <label for="name">Tomatoes:</label>
+          <input type="checkbox" id="tomatoes" name="tomatoes">
+
+          <label for="name">Mushrooms:</label>
+          <input type="checkbox" id="mushrooms" name="mushrooms">
+
+          <p><b>How do you want to get your pizza!</b></p>
+          
+          
+          <label for="delivery">Delivery</label>
+          <input type="radio" id="delivery" name="delivery" value="delivery">
+
+          <label for="pickup">Pickup</label>
+          <input type="radio" id="pickup" name="delivery" value="pickup">
+
+          <p><b>Tip?</b></p>
+
+          <input type="number"  id="tip" name="tip">
+
+          <hr>
+
+          <p><b>Address</b></p>
+          <textarea id="address" name="address" rows="7" cols="25"></textarea><br>
+
+          <input type="submit" value="Submit" class="submit-button">
+
+          <input type="reset" value="Reset" class="reset-button">
+
+          <input type="reset" value=" Show Summary"  class="summary-button">
+
+            <script>
+          function btn1(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var cheese=document.getElementById("cheese").value;
+            var pepperoni=document.getElementById("pepperoni").value;
+            var olives=document.getElementById("olives").value;
+            var pepper=document.getElementById("pepper").value;
+            var bacon=document.getElementById("bacon").value;
+            var tomatoes=document.getElementById("tomatoes").value;
+            var mushrooms=document.getElementById("mushrooms").value;
+            var delivery=document.getElementById("delivery").value;
+            var pickup=document.getElementById("pickup").value;
+            var tip=document.getElementById("tip").value;
+            var address=document.getElementById("address").value;
+            
+          var str=name+","+email+","+cheese+","+pepperoni+", "+olives+", "+pepper+", "+bacon+";
+          var node=document.createElement("li");
+          var textNode= document.createTextNode(str);
+          node.appendChild(textNode)
+          document.getElementById("ul1").appendChild(node);
+          <!-- document.getElementById("price").value=total; -->
+          document.form1.reset();
+
+          }
+
+</script>
+
+
+
+          
+      </form>  
+    </body>
+</html>

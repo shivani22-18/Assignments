@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>array</title>
+    </head>
+    <body>
+       <script>
+          var array= [];
+          var sum=0,even=0,odd=0;
+          while(array.length<100)
+          {
+              var r=Math.floor(Math.random()*1000)+1;
+              if(array.indexOf(r) === -1) array.push(r);
+
+          } 
+          
+          console.log(array);
+          console.log(Math.max(...array));
+          console.log(Math.min(...array));
+          for(var i=0;i<array.length;i++)
+          {
+              sum=sum+array[i];
+
+          }
+          console.log(sum);
+          for(var i=0;i<array.length;i++)
+          {
+              if(i%2==0)
+              {
+                  even=even+1;
+              }
+              else{
+                  odd=odd+1;
+              }
+              
+          }
+          if(even>odd)
+          {
+              console.log("even");
+
+          }
+          else{
+              console.log("odd");
+          }
+          var avg = sum/100;
+          console.log(avg);
+
+
+
+       </script>
+    </body>
+</html>
