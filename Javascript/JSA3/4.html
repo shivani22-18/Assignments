@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            let Name = {
+                first: "Shivani",
+                last: "Patil"
+            };
+            document.write("Name<br>first: "+Name.first);
+            document.write("<br>last: "+Name.last);
+            
+            Name.first = "Shravani";
+            Name.last = "Patil";
+            Name.Country = "India";
+
+            document.write("<br><hr>Updated Name properties are:<br>first: "+Name.first);
+            document.write("<br>last: "+Name.last);
+
+            document.write("<br><hr>Updated Name properties using for loop: ");
+            for (let prop in Name) {
+                document.write("<br>",prop," : ",Name[prop]);
+            }
+        </script>
+    </body>
+</html>
