@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Composed Value Functions</title>
+    </head>
+    <html>
+        <script>
+            var x=window.prompt("enter a number");
+            function square(x){
+                return x*x;
+            }
+            function double(x){
+                return x*2;
+            }
+            function composedValue(){
+            document.write("The value of compose square is  "+square(double(x)));
+            document.write("<br>The value of compose double is  "+double(square(x)));
+            }
+            composedValue();
+        </script>
+    </html>
+</html>
